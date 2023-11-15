@@ -1,8 +1,9 @@
 'use strict'
 
-function onBallClick(){
+function onBallClick() {
   const elBall = document.querySelector('.ball')
-  elBall.innerText = +elBall.innerText +50
-  elBall.style.width =  elBall.innerText+'px'
-  elBall.style.height  =  elBall.innerText+'px'
+  elBall.innerText = +elBall.innerText + 50
+  if (+elBall.innerText > 400) elBall.innerText = 100
+  elBall.style.width = elBall.innerText + 'px'
+  elBall.style.height = elBall.innerText + 'px'
 }
