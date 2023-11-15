@@ -6,4 +6,5 @@ function onBallClick() {
   if (+elBall.innerText > 400) elBall.innerText = 100
   elBall.style.width = elBall.innerText + 'px'
   elBall.style.height = elBall.innerText + 'px'
+  elBall.style.backgroundColor = getRandomColor()
 }
